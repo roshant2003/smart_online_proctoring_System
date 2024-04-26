@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proctoring Control</title>
+</head>
+<body>
+    <h1>Proctoring Control</h1>
+    <p>Status: {% if running %}Running{% else %}Stopped{% endif %}</p>
+    <form method="POST" action="/start">
+        <button type="submit">Start Proctoring</button>
+    </form>
+    <form method="POST" action="/stop">
+        <button type="submit">Stop Proctoring</button>
+    </form>
+</body>
+</html>
